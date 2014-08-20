@@ -1,0 +1,912 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<!-- saved from url=(0056)http://appinventor.mit.edu/explore/ai2/colored-dots.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js"><head profile="http://www.w3.org/1999/xhtml/vocab"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+<link rel="shortcut icon" href="http://appinventor.mit.edu/explore/sites/explore.appinventor.mit.edu/files/AI2-Favicon_1.ico" type="image/vnd.microsoft.icon">
+<meta content="Colored Dots for App Inventor 2" about="/ai2/colored-dots" property="dc:title">
+<link rel="canonical" href="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/Colored Dots for App Inventor 2   Explore MIT App Inventor.html">
+<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+<link rel="shortlink" href="http://appinventor.mit.edu/explore/node/380.html">
+  <title>Colored Dots for App Inventor 2 | Explore MIT App Inventor</title>
+  <style>@import url("../modules/system/system.base18c3.css?n8wu80");
+@import url("../modules/system/system.menus18c3.css?n8wu80");
+@import url("../modules/system/system.messages18c3.css?n8wu80");
+@import url("../modules/system/system.theme18c3.css?n8wu80");</style>
+<style>@import url("../misc/ui/jquery.ui.core18c3.css?n8wu80");
+@import url("../misc/ui/jquery.ui.theme18c3.css?n8wu80");
+@import url("../misc/ui/jquery.ui.accordion18c3.css?n8wu80");</style>
+<style>@import url("../sites/all/modules/date/date_api/date18c3.css?n8wu80");
+@import url("../sites/all/modules/date/date_repeat_field/date_repeat_field18c3.css?n8wu80");
+@import url("../modules/field/theme/field18c3.css?n8wu80");
+@import url("../modules/node/node18c3.css?n8wu80");
+@import url("../modules/search/search18c3.css?n8wu80");
+@import url("../modules/user/user18c3.css?n8wu80");
+@import url("../sites/all/modules/extlink/extlink18c3.css?n8wu80");
+@import url("../sites/all/modules/views/css/views18c3.css?n8wu80");</style>
+<style>@import url("../sites/all/modules/ctools/css/ctools18c3.css?n8wu80");
+@import url("../sites/all/modules/lightbox2/css/lightbox18c3.css?n8wu80");
+@import url("../sites/all/modules/panels/css/panels18c3.css?n8wu80");
+@import url("../sites/all/libraries/superfish/css/superfish18c3.css?n8wu80");</style>
+<style>@import url("../sites/all/themes/adaptivetheme/adaptivetheme/css/at.base18c3.css?n8wu80");
+@import url("../sites/all/themes/adaptivetheme/adaptivetheme/css/at.layout18c3.css?n8wu80");
+@import url("../sites/all/themes/adaptivetheme/adaptivetheme/css/at.messages18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/html-elements18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/forms18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/tables18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/page18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/articles18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/comments18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/fields18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/blocks18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/navigation18c3.css?n8wu80");
+@import url("../sites/all/themes/newexploretheme/color/colors18c3.css?n8wu80");
+@import url("../sites/all/themes/sky/css/sky.settings.style18c3.css?n8wu80");
+@import url("../sites/all/themes/newexploretheme/css/NewExploretheme18c3.css?n8wu80");
+@import url("../sites/all/themes/newexploretheme/video-js/video-js18c3.css?n8wu80");
+@import url("../sites/all/themes/appinventor/assets/css/reset18c3.css?n8wu80");
+@import url("../sites/all/themes/appinventor/assets/css/typography18c3.css?n8wu80");
+@import url("../sites/all/themes/appinventor/assets/css/layout18c3.css?n8wu80");
+@import url("../sites/all/themes/appinventor/assets/css/drupal18c3.css?n8wu80");</style>
+<style media="print">@import url("../sites/all/themes/sky/css/print18c3.css?n8wu80");</style>
+<link type="text/css" rel="stylesheet" href="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/sky.responsive.style18c3.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/sky.responsive.gpanels18c3.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/appinventor.responsive.style18c3.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/modtheme.responsive.gpanels18c3.css" media="all">
+<link type="text/css" rel="stylesheet" href="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/appinventor.responsive.layout18c3.css" media="all">
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="http://explore.appinventor.mit.edu/sites/explore.appinventor.mit.edu/files/at_css/appinventor.lt-ie9.layout.css?n8wu80" media="all" />
+<![endif]-->
+  <script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/cb=gapi.loaded_1" async=""></script><script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/pinit_main.js"></script><script type="text/javascript" async="" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/platform.js" gapi_processed="true"></script><script id="facebook-jssdk" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/sdk.js"></script><script id="twitter-wjs" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/widgets.js"></script><script type="text/javascript" async="" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/cse.js"></script><script async="" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/analytics.js"></script><script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/jquery1cc4.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/jquery.once7839.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/drupal18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/jquery.ui.core.mina7b0.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/jquery.ui.widget.mina7b0.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/jquery.effects.core.mina7b0.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/jquery.ui.accordion.mina7b0.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/extlink18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/lightbox18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/googleanalytics18c3.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.google-analytics.com/analytics.js","ga");ga("create", "UA-31803258-1", "auto");ga("send", "pageview");</script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/js-image-slider18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/jquery.hoverIntent.minified18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/sfsmallscreen18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/superfish18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/supersubs18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/superfish18c3(1).js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/scripts18c3.js"></script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/video18c3.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"appinventor","theme_token":"sp7nlD3rRW8j14VZ48XG3TYRDxRjlQLwgmJ2-2CxZN0","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"misc\/ui\/jquery.effects.core.min.js":1,"misc\/ui\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"\/sites\/all\/themes\/appinventor\/assets\/jsImgSlider\/js-image-slider.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/sky\/js\/scripts.js":1,"sites\/all\/themes\/newexploretheme\/video-js\/video.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/css\/at.base.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/css\/at.layout.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/css\/at.messages.css":1,"sites\/all\/themes\/sky\/css\/html-elements.css":1,"sites\/all\/themes\/sky\/css\/forms.css":1,"sites\/all\/themes\/sky\/css\/tables.css":1,"sites\/all\/themes\/sky\/css\/page.css":1,"sites\/all\/themes\/sky\/css\/articles.css":1,"sites\/all\/themes\/sky\/css\/comments.css":1,"sites\/all\/themes\/sky\/css\/fields.css":1,"sites\/all\/themes\/sky\/css\/blocks.css":1,"sites\/all\/themes\/sky\/css\/navigation.css":1,"sites\/all\/themes\/newexploretheme\/color\/colors.css":1,"sites\/all\/themes\/sky\/css\/sky.settings.style.css":1,"sites\/all\/themes\/newexploretheme\/css\/NewExploretheme.css":1,"sites\/all\/themes\/newexploretheme\/video-js\/video-js.css":1,"sites\/all\/themes\/appinventor\/assets\/css\/reset.css":1,"sites\/all\/themes\/appinventor\/assets\/css\/typography.css":1,"sites\/all\/themes\/appinventor\/assets\/css\/layout.css":1,"sites\/all\/themes\/appinventor\/assets\/css\/drupal.css":1,"sites\/all\/themes\/sky\/css\/print.css":1,"sites\/all\/themes\/sky\/css\/sky.responsive.style.css":1,"sites\/all\/themes\/sky\/css\/sky.responsive.gpanels.css":1,"sites\/all\/themes\/appinventor\/css\/appinventor.responsive.style.css":1,"sites\/all\/themes\/appinventor\/css\/modtheme.responsive.gpanels.css":1,"public:\/\/at_css\/appinventor.responsive.layout.css":1,"public:\/\/at_css\/appinventor.lt-ie9.layout.css":1}},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":0,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":1,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":0},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":false,"disableHI":false},"plugins":{"smallscreen":{"mode":"window_width","addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Simple_Nav"},"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}}});</script>
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/secureAnonymousFramework"></script><script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/jsapi" type="text/javascript"></script><link type="text/css" href="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/default+en.css" rel="stylesheet"><link type="text/css" href="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/default.css" rel="stylesheet"><script type="text/javascript" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/default+en.I.js"></script><script type="text/javascript" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/search.I.js"></script><style type="text/css">a.PIN_1406714488521_pin_it_button_20 { cursor: pointer!important; background-repeat: none!important; background-size: 40px 60px!important; height: 20px!important; padding: 0!important; vertical-align: baseline!important; text-decoration: none!important; width: 40px!important; background-position: 0 -20px }
+a.PIN_1406714488521_pin_it_button_20:hover { background-position: 0 0px }
+a.PIN_1406714488521_pin_it_button_20:active, a.PIN_1406714488521_pin_it_button_20.PIN_1406714488521_hazClick { background-position: 0 -40px }
+a.PIN_1406714488521_pin_it_button_inline_20 { cursor: pointer!important; position: relative!important; display: inline-block!important; }
+a.PIN_1406714488521_pin_it_button_floating_20 { cursor: pointer!important; position: absolute!important; }
+a.PIN_1406714488521_pin_it_beside_20_pad { margin-right: 45px!important; }
+a.PIN_1406714488521_pin_it_button_en_20_red { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_rect_red_20_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_en_20_white { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_rect_white_20_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_en_20_gray { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_rect_gray_20_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_ja_20_red { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_ja_rect_red_20_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_ja_20_white { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_ja_rect_white_20_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_ja_20_gray { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_ja_rect_gray_20_1.png)!important; }
+a.PIN_1406714488521_pin_it_above_20 span.PIN_1406714488521_pin_it_button_count { background: transparent url(http://passets.pinterest.com/images/pidgets/count_north_white_rect_20_1.png) 0 0 no-repeat!important; background-size: 40px 29px!important; position: absolute!important; bottom: 21px!important; left: 0px!important; height: 29px!important; width: 40px!important; font: 12px Arial, Helvetica, sans-serif!important; line-height: 24px!important; text-indent: 0!important;}
+a.PIN_1406714488521_pin_it_button_20 span.PIN_1406714488521_pin_it_button_count { position: absolute!important; color: #777!important; text-align: center!important; text-indent: 0!important; }
+a.PIN_1406714488521_pin_it_beside_20 span.PIN_1406714488521_pin_it_button_count, a.PIN_1406714488521_pin_it_beside_20 span.PIN_1406714488521_pin_it_button_count i { background-color: transparent!important; background-repeat: no-repeat!important; background-image: url(http://passets.pinterest.com/images/pidgets/count_east_white_rect_20_1.png)!important; }
+a.PIN_1406714488521_pin_it_beside_20 span.PIN_1406714488521_pin_it_button_count { padding: 0 3px 0 10px!important; background-size: 45px 20px!important; background-position: 0 0!important; position: absolute!important; top: 0!important; left: 41px!important; height: 20px!important; font: 10px Arial, Helvetica, sans-serif!important; line-height: 20px!important; }
+a.PIN_1406714488521_pin_it_beside_20 span.PIN_1406714488521_pin_it_button_count i { background-position: 100% 0!important; position: absolute!important; top: 0!important; right: -2px!important; height: 20px!important; width: 2px!important; }
+a.PIN_1406714488521_pin_it_button_20.PIN_1406714488521_pin_it_above { margin-top: 20px!important; }
+a.PIN_1406714488521_pin_it_button_28 { cursor: pointer!important; background-repeat: none!important; background-size: 56px 84px!important; height: 28px!important; padding: 0!important; vertical-align: baseline!important; text-decoration: none!important; width: 56px!important; background-position: 0 -28px }
+a.PIN_1406714488521_pin_it_button_28:hover { background-position: 0 0px }
+a.PIN_1406714488521_pin_it_button_28:active, a.PIN_1406714488521_pin_it_button_28.PIN_1406714488521_hazClick { background-position: 0 -56px }
+a.PIN_1406714488521_pin_it_button_inline_28 { cursor: pointer!important; position: relative!important; display: inline-block!important; }
+a.PIN_1406714488521_pin_it_button_floating_28 { cursor: pointer!important; position: absolute!important; }
+a.PIN_1406714488521_pin_it_beside_28_pad { margin-right: 50px!important;}
+a.PIN_1406714488521_pin_it_button_en_28_red { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_rect_red_28_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_en_28_white { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_rect_white_28_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_en_28_gray { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_rect_gray_28_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_ja_28_red { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_ja_rect_red_28_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_ja_28_white { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_ja_rect_white_28_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_ja_28_gray { background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_ja_rect_gray_28_1.png)!important; }
+a.PIN_1406714488521_pin_it_button_en_16_red_round, a.PIN_1406714488521_pin_it_button_en_32_red_round { background-repeat: none!important; margin: 0!important; padding: 0!important; vertical-align: baseline!important; text-decoration: none!important; }
+a.PIN_1406714488521_pin_it_button_en_16_red_round { height: 16px!important; width: 16px!important; background-size: 16px 16px!important; background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_round_red_16_1.png)!important;}
+a.PIN_1406714488521_pin_it_button_en_32_red_round { height: 32px!important; width: 32px!important; background-size: 32px 32px!important; background-image: url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_round_red_32_1.png)!important;}
+a.PIN_1406714488521_pin_it_button_inline_en_16_red_round, a.PIN_1406714488521_pin_it_button_inline_en_32_red_round { position: relative!important; display: inline-block!important; }
+a.PIN_1406714488521_pin_it_button_floating_en_16_red_round, a.PIN_1406714488521_pin_it_button_floating_en_32_red_round  { position: absolute!important; }
+a.PIN_1406714488521_pin_it_button_28 span.PIN_1406714488521_pin_it_button_count { position: absolute!important; color: #777!important; text-align: center!important; text-indent: 0!important; }
+a.PIN_1406714488521_pin_it_above_28 span.PIN_1406714488521_pin_it_button_count { background: transparent url(http://passets.pinterest.com/images/pidgets/count_north_white_rect_28_1.png) 0 0 no-repeat!important; background-size: 56px 37px!important; position: absolute!important; bottom: 29px!important; left: 0px!important; height: 37px!important; width: 56px!important; font: 15px Arial, Helvetica, sans-serif!important; line-height: 28px!important; text-indent: 0!important;}
+a.PIN_1406714488521_pin_it_beside_28 span.PIN_1406714488521_pin_it_button_count, a.PIN_1406714488521_pin_it_beside_28 span.PIN_1406714488521_pin_it_button_count i { background-color: transparent!important; background-repeat: no-repeat!important; background-image: url(http://passets.pinterest.com/images/pidgets/count_east_white_rect_28_1.png)!important; }
+a.PIN_1406714488521_pin_it_beside_28 span.PIN_1406714488521_pin_it_button_count { padding: 0 3px 0 10px!important; background-size: 63px 28px!important; background-position: 0 0!important; position: absolute!important; top: 0!important; left: 57px!important; height: 28px!important; font: 12px Arial, Helvetica, sans-serif!important; line-height: 28px!important; }
+a.PIN_1406714488521_pin_it_beside_28 span.PIN_1406714488521_pin_it_button_count i { background-position: 100% 0!important; position: absolute!important; top: 0!important; right: -2px!important; height: 28px!important; width: 2px!important; }
+a.PIN_1406714488521_pin_it_button_28.PIN_1406714488521_pin_it_above { margin-top: 28px!important; }
+a.PIN_1406714488521_follow_me_button, a.PIN_1406714488521_follow_me_button i { background-size: 200px 60px!important; background: transparent url(http://passets.pinterest.com/images/pidgets/bfs1.png) 0 0 no-repeat }
+a.PIN_1406714488521_follow_me_button { cursor: pointer!important; color: #444!important; display: inline-block!important; font: bold normal normal 11px/20px "Helvetica Neue",helvetica,arial,san-serif!important; height: 20px!important; margin: 0!important; padding: 0!important; position: relative!important; text-decoration: none!important; text-indent: 19px!important; vertical-align: baseline!important;}
+a.PIN_1406714488521_follow_me_button:hover { background-position: 0 -20px}
+a.PIN_1406714488521_follow_me_button:active  { background-position: 0 -40px}
+a.PIN_1406714488521_follow_me_button b { position: absolute!important; top: 3px!important; left: 3px!important; height: 14px!important; width: 14px!important; background-size: 14px 14px!important; background-image: url(http://passets.pinterest.com/images/pidgets/log1.png)!important; }
+a.PIN_1406714488521_follow_me_button i { position: absolute!important; top: 0!important; right: -4px!important; height: 20px!important; width: 4px!important; background-position: 100% 0px!important; }
+a.PIN_1406714488521_follow_me_button:hover i { background-position: 100% -20px!important;  }
+a.PIN_1406714488521_follow_me_button:active i { background-position: 100% -40px!important; }
+a.PIN_1406714488521_follow_me_button_28, a.PIN_1406714488521_follow_me_button_28 i { background-size: 400px 84px!important; background: transparent url(http://passets.pinterest.com/images/pidgets/bft1.png) 0 0 no-repeat }
+a.PIN_1406714488521_follow_me_button_28 { cursor: pointer!important; color: #444!important; display: inline-block!important; font: bold normal normal 13px/28px "Helvetica Neue",helvetica,arial,san-serif!important; height: 28px!important; margin: 0!important; padding: 0!important; position: relative!important; text-decoration: none!important; text-indent: 33px!important; vertical-align: baseline!important;}
+a.PIN_1406714488521_follow_me_button_28:hover { background-position: 0 -28px}
+a.PIN_1406714488521_follow_me_button_28:active  { background-position: 0 -56px}
+a.PIN_1406714488521_follow_me_button_28 b { position: absolute!important; top: 5px!important; left: 10px!important; height: 18px!important; width: 18px!important; background-size: 18px 18px!important; background-image: url(http://passets.pinterest.com/images/pidgets/smt1.png)!important; }
+a.PIN_1406714488521_follow_me_button_28 i { position: absolute!important; top: 0!important; right: -10px!important; height: 28px!important; width: 10px!important; background-position: 100% 0px!important; }
+a.PIN_1406714488521_follow_me_button_28:hover i { background-position: 100% -28px!important;  }
+a.PIN_1406714488521_follow_me_button_28:active i { background-position: 100% -56px!important; }
+span.PIN_1406714488521_embed_pin { -webkit-font-smoothing: antialiased!important; cursor: pointer!important; display: inline-block!important; text-align: center!important; width: 237px!important; overflow: hidden!important; vertical-align: top!important; }
+span.PIN_1406714488521_embed_pin.PIN_1406714488521_fancy { background: #fff!important; box-shadow: 0 1px 3px rgba(0, 0, 0, .33)!important; border-radius: 3px!important; }
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link { display: block!important;  margin: 0 auto!important; padding: 0!important; position: relative!important;  line-height: 0}
+span.PIN_1406714488521_embed_pin img.PIN_1406714488521_embed_pin_link_img { border: 0!important; margin: 0!important; padding: 0!important; border-bottom: 1px solid rgba(0, 0, 0, .09)!important;}
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link i.PIN_1406714488521_repin { left: 12px!important; top: 12px!important; position: absolute!important; height: 20px!important; width: 40px!important; background-size: 40px 60px!important;  background: transparent url(http://passets.pinterest.com/images/pidgets/pinit_bg_en_rect_red_20_1.png) }
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link i.PIN_1406714488521_repin_ja { left: 12px!important; top: 12px!important; position: absolute!important; height: 20px!important; width: 40px!important; background-size: 40px 60px!important; background: transparent url(http://passets.pinterest.com/images/pidgets/pinit_bg_ja_rect_red_20_1.png) }
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link i.PIN_1406714488521_repin:hover, span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link i.PIN_1406714488521_repin_ja:hover { background-position: 0 -20px!important; }
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link i.PIN_1406714488521_repin.PIN_1406714488521_hazClick, span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link i.PIN_1406714488521_repin_ja.PIN_1406714488521_hazClick { background-position: 0 -40px!important; }
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link i.PIN_1406714488521_play { display: block!important; width: 50px!important; white-space: pre!important; font-family: "Helvetica Neue",helvetica,arial,san-serif!important; font-weight: bold!important; font-style: normal!important; font-size: 9px!important; line-height: 12px!important; margin: 0!important; position: absolute!important; bottom: 12px!important; left: 12px!important; text-decoration: none!important; background: rgba(0, 0, 0, .4)!important; color: rgba(255, 255, 255, 1)!important; border-radius: 13px!important; padding: 5px 0!important; box-shadow: 0 0 2px rgba(0, 0, 0, .2)!important; border: 2px solid rgba(255, 255, 255, .68)!important;}
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_link i.PIN_1406714488521_play:hover { background: rgba(0, 0, 0, .8)!important; color: #fff!important; }
+span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_desc { color: #363636!important; white-space: normal!important; border-bottom: 1px solid rgba(0, 0, 0, .09)!important;!important; display: block!important; font-family: "Helvetica Neue", arial, sans-serif!important; font-size: 13px!important; line-height: 17px!important; padding: 12px!important; text-align: left!important; }
+span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_attrib { color: #a8a8a8!important; font-family: "Helvetica Neue", sans-serif!important; font-size: 11px!important; line-height: 18px!important; margin-top: 12px!important; font-weight: bold!important; display: block!important;}
+span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_attrib img.PIN_1406714488521_embed_pin_attrib_icon { height: 16px!important; width: 16px!important; vertical-align: middle!important; padding: 0!important; margin: 0 5px 0 0!important; float: left!important;}
+span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_attrib a { color: #a8a8a8!important; text-decoration: none!important;}
+span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_stats { display: block!important; }
+span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_stats span.PIN_1406714488521_embed_pin_stats_repin_count, span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_stats span.PIN_1406714488521_embed_pin_stats_like_count { display: inline-block!important; padding-left: 17px!important; padding-right: 10px!important; color: #a8a8a8!important; font-family: "Helvetica Neue", sans-serif!important; font-size: 11px!important; line-height: 12px!important; margin-top: 12px!important; font-weight: bold!important; }
+span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_stats span.PIN_1406714488521_embed_pin_stats_repin_count { background: url(data:image/png!important;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAAAAABq7uO+AAAASklEQVQI10WNMQrAMBRCvf/Z3pQcImPplsIPdqhNXOSJqLxVtnWQsuUO9IM3cHlV8dSSDZQHAOPH2YA2FU+qtH7MRhaVh/xt/PQCEW6N4EV+CPEAAAAASUVORK5CYII=) 0 0 no-repeat!important; }
+span.PIN_1406714488521_embed_pin span.PIN_1406714488521_embed_pin_stats span.PIN_1406714488521_embed_pin_stats_like_count { background: url(data:image/png!important;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAAAAAClR+AmAAAAUElEQVR4AT2HMQpFIQwEc/+zbXhFLBW8QUihIAT2E8Q/xe6M0Jv2zK7NKUcBzAlAjzjqtdZl4c8S2nOjMPS6BoWMr/wLVnAbYJs3mGMkXzx+OeRqUf5HHRoAAAAASUVORK5CYII=) 0 2px no-repeat!important; }
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_text { padding: 12px!important; position: relative!important; text-decoration: none!important; display: block!important; font-weight: bold!important; color: #b7b7b7!important; font-family: "Helvetica Neue", arial, sans-serif!important; font-size: 11px!important; line-height: 14px!important; height: 30px!important; text-align: left!important; }
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_text:hover { background: #eee!important;}
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_text img.PIN_1406714488521_embed_pin_text_avatar { border-radius: 15px!important; overflow: hidden!important; height: 30px!important; width: 30px!important; vertical-align: middle!important; margin: 0 8px 12px 0!important; float: left!important;}
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_text span.PIN_1406714488521_embed_pin_text_container_pinner, span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_text span.PIN_1406714488521_embed_pin_text_container_board { display: block!important; width: 175px!important; white-space: nowrap!important; overflow: hidden!important; text-overflow: ellipsis!important;}
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_text span.PIN_1406714488521_embed_pin_text_container_pinner { color: #777!important;}
+span.PIN_1406714488521_embed_pin a.PIN_1406714488521_embed_pin_text b.PIN_1406714488521_embed_pin_link_shield { position: absolute!important; top: 0!important; left: 0!important; height: 100%!important; width: 100%!important; }
+span.PIN_1406714488521_embed_grid { display: inline-block!important; margin: 0!important; padding:10px 0!important; position: relative!important; text-align: center}
+span.PIN_1406714488521_embed_grid.PIN_1406714488521_fancy { background: #fff!important; box-shadow: 0 0 3px #aaa!important; border-radius: 3px!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd { display: block!important; margin: 0 10px!important; padding: 0!important; height: 45px!important; position: relative!important; background: #fff}
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a.PIN_1406714488521_avatar { position: absolute!important; top: 0!important; left: 0!important; height: 36px!important; width: 36px!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a.PIN_1406714488521_avatar::before { position: absolute!important; content:""!important; z-index: 2!important; top: 0!important; left: 0!important; right: 0!important; bottom: 0!important; box-shadow: inset 0 0 2px #888!important;  border-radius: 3px!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a.PIN_1406714488521_avatar img { position: relative!important; height: 36px!important; width: 36px!important; margin: 0!important; padding: 0!important; border-radius: 3px!important; border: none!important;}
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a { text-decoration: none!important; background: transparent!important; cursor: pointer!important; white-space: nowrap!important; position: absolute!important; left: 44px!important; text-align: left!important; overflow: hidden!important; text-overflow: ellipsis!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a:hover { text-decoration: none!important; background: #fff!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a:active { text-decoration: none!important; background: #fff!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a.PIN_1406714488521_embed_grid_first { top: 2px!important; font-family: helvetica, sans-serif!important; font-weight: bold!important; color:#333!important; font-size: 14px!important; line-height: 16px!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a.PIN_1406714488521_embed_grid_second { bottom: 11px!important; font-family: helvetica, sans-serif!important; color:#8e8e8e!important; font-size: 12px!important; line-height: 14px!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_hd a.PIN_1406714488521_embed_grid_mid { top: 12px!important; font-family: helvetica, sans-serif!important; font-weight: bold!important; color:#333!important; font-size: 14px!important; line-height: 16px!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_bd { display:block!important; margin: 0 10px!important; border-radius: 2px!important; position: relative!important; overflow: hidden }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_scrolling_okay { overflow: auto!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_bd span.PIN_1406714488521_embed_grid_ct { display:block!important; position: relative!important; overflow: hidden!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_bd a.PIN_1406714488521_embed_grid_th { cursor: pointer!important; display: inline-block!important; position: absolute!important; overflow: hidden!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_bd a.PIN_1406714488521_embed_grid_th::before { position: absolute!important; content:""!important; z-index: 2!important; top: 0!important; left: 0!important; right: 0!important; bottom: 0!important; box-shadow: inset 0 0 2px #888!important; }
+span.PIN_1406714488521_embed_grid span.PIN_1406714488521_embed_grid_bd a.PIN_1406714488521_embed_grid_th img.PIN_1406714488521_embed_grid_img { border: none!important; position: absolute!important; top: 50%!important; left: 0!important; }
+a.PIN_1406714488521_embed_grid_ft { cursor: pointer!important; text-shadow: 0 1px #fff!important; display: block!important; text-align: center!important; border: 1px solid #ccc!important; margin: 10px 10px 0!important; height: 31px!important; line-height: 30px!important;border-radius: 2px!important; text-decoration: none!important; font-family: Helvetica!important; font-weight: bold!important; font-size: 13px!important; color: #746d6a!important; background: #f4f4f4 url(http://passets.pinterest.com/images/pidgets/board_button_link.png) 0 0 repeat-x}
+a.PIN_1406714488521_embed_grid_ft:hover { text-decoration: none!important; background: #fefefe url(http://passets.pinterest.com/images/pidgets/board_button_hover.png) 0 0 repeat-x}
+a.PIN_1406714488521_embed_grid_ft:active { text-decoration: none!important; background: #e4e4e4 url(http://passets.pinterest.com/images/pidgets/board_button_active.png) 0 0 repeat-x}
+a.PIN_1406714488521_embed_grid_ft span.PIN_1406714488521_embed_grid_ft_logo { vertical-align: top!important; display: inline-block!important; margin-left: 2px!important; height: 30px!important; width: 66px!important; background: transparent url(http://passets.pinterest.com/images/pidgets/board_button_logo.png) 50% 48% no-repeat!important; }
+.PIN_1406714488521_hidden { display:none!important; }</style><style type="text/css">
+</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><style type="text/css">* html #li_ui_li_gen_1406714489104_0 a#li_ui_li_gen_1406714489104_0-link{height:1% !important;}#li_ui_li_gen_1406714489104_0{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1406714489104_0 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1406714489104_0 a#li_ui_li_gen_1406714489104_0-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1406714489104_0 a#li_ui_li_gen_1406714489104_0-link:link, #li_ui_li_gen_1406714489104_0 a#li_ui_li_gen_1406714489104_0-link:visited, #li_ui_li_gen_1406714489104_0 a#li_ui_li_gen_1406714489104_0-link:hover, #li_ui_li_gen_1406714489104_0 a#li_ui_li_gen_1406714489104_0-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1406714489104_0 a#li_ui_li_gen_1406714489104_0-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -276px !important;background-repeat:no-repeat !important;background-size:initial !important;cursor:pointer !important;border:0 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:0 !important;-webkit-border-radius:0 !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;}#li_ui_li_gen_1406714489104_0.hovered #li_ui_li_gen_1406714489104_0-logo{background-position:-20px -276px !important;}#li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-logo, #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-logo{background-position:-40px -276px !important;}.IN-shadowed #li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-logo{}#li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title{color:#333 !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#E2E2E2 !important;border-right-color:#BFBFBF !important;border-bottom-color:#B9B9B9 !important;border-left-color:#E2E2E2 !important;border-left:0 !important;text-shadow:#FFFFFF -1px 1px 0 !important;line-height:20px !important;border-radius:0 !important;-webkit-border-radius:0 !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;background-color:#ECECEC !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#ECECEC)) !important; background-image: -webkit-linear-gradient(top, #FEFEFE 0%, #ECECEC 100%) !important;}#li_ui_li_gen_1406714489104_0.hovered #li_ui_li_gen_1406714489104_0-title{border:1px solid #000 !important;border-top-color:#ABABAB !important;border-right-color:#9A9A9A !important;border-bottom-color:#787878 !important;border-left-color:#04568B !important;border-left:0 !important;background-color:#EDEDED !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#DEDEDE)) !important; background-image: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%) !important;}#li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-title, #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-title{color:#666 !important;border:1px solid #000 !important;border-top-color:#B6B6B6 !important;border-right-color:#B3B3B3 !important;border-bottom-color:#9D9D9D !important;border-left-color:#49627B !important;border-left:0 !important;background-color:#DEDEDE !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(100%,#EDEDED)) !important; background-image: -webkit-linear-gradient(top, #E3E3E3 0%, #EDEDED 100%) !important;}.IN-shadowed #li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title{}.IN-shadowed #li_ui_li_gen_1406714489104_0.hovered #li_ui_li_gen_1406714489104_0-title{}.IN-shadowed #li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-title, .IN-shadowed #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-title{}#li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title-text, #li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title-text *{color:#333 !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title-text em{font-style:italic !important;}#li_ui_li_gen_1406714489104_0.hovered #li_ui_li_gen_1406714489104_0-title-text, #li_ui_li_gen_1406714489104_0.hovered #li_ui_li_gen_1406714489104_0-title-text *{color:#000 !important;}#li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-title-text, #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-title-text, #li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-title-text *, #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-title-text *{color:#666 !important;}#li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title #li_ui_li_gen_1406714489104_0-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title{color:#333 !important;border-top-color:#E2E2E2 !important;border-right-color:#BFBFBF !important;border-bottom-color:#B9B9B9 !important;border-left-color:#E2E2E2 !important;background-color:#ECECEC !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#ECECEC)) !important; background-image: -webkit-linear-gradient(top, #FEFEFE 0%, #ECECEC 100%) !important;}.success #li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title-text, .success #li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title-text *{color:#333 !important;}.IN-shadowed .success #li_ui_li_gen_1406714489104_0 #li_ui_li_gen_1406714489104_0-title{}.success #li_ui_li_gen_1406714489104_0.hovered #li_ui_li_gen_1406714489104_0-title{color:#000 !important;border-top-color:#ABABAB !important;border-right-color:#9A9A9A !important;border-bottom-color:#787878 !important;border-left-color:#04568B !important;background-color:#EDEDED !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#DEDEDE)) !important; background-image: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%) !important;}.success #li_ui_li_gen_1406714489104_0.hovered #li_ui_li_gen_1406714489104_0-title-text, .success #li_ui_li_gen_1406714489104_0.hovered #li_ui_li_gen_1406714489104_0-title-text *{color:#000 !important;}.success #li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-title, .success #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-title{color:#666 !important;border-top-color:#B6B6B6 !important;border-right-color:#B3B3B3 !important;border-bottom-color:#9D9D9D !important;border-left-color:#49627B !important;background-color:#DEDEDE !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(100%,#EDEDED)) !important; background-image: -webkit-linear-gradient(top, #E3E3E3 0%, #EDEDED 100%) !important;}.success #li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-title-text, .success #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-title-text, .success #li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-title-text *, .success #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-title-text *{color:#666 !important;}.IN-shadowed .success #li_ui_li_gen_1406714489104_0.clicked #li_ui_li_gen_1406714489104_0-title, .IN-shadowed .success #li_ui_li_gen_1406714489104_0.down #li_ui_li_gen_1406714489104_0-title{}#li_ui_li_gen_1406714489125_1-container.IN-right {display:inline-block !important;float:left !important;overflow:visible !important;position:relative !important;height:18px !important;padding-left:2px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1406714489125_1.IN-right {display:block !important;float:left !important;height:18px !important;margin-right:4px !important;padding-right:4px !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:right -100px !important;}#li_ui_li_gen_1406714489125_1-inner.IN-right {display:block !important;float:left !important;padding-left:8px !important;text-align:center !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:0px -60px !important;}#li_ui_li_gen_1406714489125_1-content.IN-right {display:inline !important;font-size:11px !important;color:#04558B !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:18px !important;padding:0 5px 0 5px !important;}#li_ui_li_gen_1406714489125_1-container.IN-empty {display:none !important;}#li_ui_li_gen_1406714489125_1-container.IN-hidden #li_ui_li_gen_1406714489125_1 {display:none !important;}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_connect_bar_container div,.fb_connect_bar_container span,.fb_connect_bar_container a,.fb_connect_bar_container img,.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}.fb_connect_bar a:hover{color:#fff}.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}.fb_connect_bar div a,.fb_connect_bar span,.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style></head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-380 page-type-tutorial lang-en site-name-explore-mit-app-inventor section-ai2 color-scheme-default appinventor gecko win fs-medium bs-n bb-n mb-dd rc-0 rct-8 ia-r bf-l snf-a ssf-a ptf-a ntf-a ctf-a btf-a lightbox-processed" data-twttr-rendered="true">
+  <div id="skip-link">
+    <a href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page" class="container">
+
+  
+  <header class="clearfix" role="banner">
+
+  <div id="top_bar">
+   <div id="branding">
+      <!--        <hgroup>
+                      <h1 id="site-name"><a href="/" title="Home page">Explore MIT App Inventor</a></h1>
+                            </hgroup>
+      -->
+              <div id="logo"><a href="http://appinventor.mit.edu/explore/index-2.html" title="Home page"><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/logo.png" alt="Explore MIT App Inventor logo"></a></div>
+          
+    </div>
+      <div id="menu-bar" class="nav clearfix">
+      <nav id="block-superfish-1" class="block block-superfish block-odd block-count-1 block-region-menu-bar menu-wrapper clearfix" role="navigation">
+              <h2 class="block-title element-invisible element-invisible">Simple_Nav</h2>
+            <ul id="superfish-1" class="menu sf-menu sf-menu-simple-nav sf-horizontal sf-style-none sf-total-items-3 sf-parent-items-3 sf-single-items-0 superfish-processed sf-js-enabled"><li id="menu-2892-1" class="first odd sf-item-1 sf-depth-1 sf-list-anchors sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="http://appinventor.mit.edu/explore/index-2.html" title="" class="sf-depth-1 menuparent">Home ▾</a><ul class="sf-hidden" style="float: none; width: 12em; top: -99999em;"><li id="menu-3783-1" class="firstandlast odd sf-item-1 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/teach.html" title="" class="sf-depth-2" style="float: none; width: auto;">Teach</a></li></ul></li><li id="menu-2893-1" class="middle even sf-item-2 sf-depth-1 sf-list-anchors sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="http://appinventor.mit.edu/explore/news-events.html" title="" class="sf-depth-1 menuparent">Blog ▾</a><ul class="sf-hidden" style="float: none; width: 12em; top: -99999em;"><li id="menu-3040-1" class="first odd sf-item-1 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/news-events.html" title="" class="sf-depth-2" style="float: none; width: auto;">News &amp; Events</a></li><li id="menu-3039-1" class="middle even sf-item-2 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/stories.html" title="" class="sf-depth-2" style="float: none; width: auto;">App Inventor in Action</a></li><li id="menu-3239-1" class="middle odd sf-item-3 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/blog.html" title="" class="sf-depth-2" style="float: none; width: auto;">Team Blog</a></li><li id="menu-4074-1" class="last even sf-item-4 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/app-of-the-month-gallery.html" title="Gallery of current and past MIT App Inventor App of the Month winners" class="sf-depth-2" style="float: none; width: auto;">App of the Month</a></li></ul></li><li id="menu-2894-1" class="last odd sf-item-3 sf-depth-1 sf-list-anchors sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent"><a href="http://appinventor.mit.edu/explore/library.html" title="" class="sf-depth-1 menuparent">Support ▾</a><ul class="sf-hidden" style="float: none; width: 12em; top: -99999em;"><li id="menu-3041-1" class="first odd sf-item-1 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/get-started.html" title="" class="sf-depth-2" style="float: none; width: auto;">Get Started</a></li><li id="menu-3036-1" class="middle even sf-item-2 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/ai2/tutorials.html" title="Tutorials to learn about using MIT App Inventor" class="sf-depth-2" style="float: none; width: auto;">Tutorials</a></li><li id="menu-3104-1" class="middle odd sf-item-3 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/library.html" title="" class="sf-depth-2" style="float: none; width: auto;">Library</a></li><li id="menu-3038-1" class="middle even sf-item-4 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/resources.html" title="" class="sf-depth-2" style="float: none; width: auto;">Resources</a></li><li id="menu-3037-1" class="middle odd sf-item-5 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="https://groups.google.com/forum/#!forum/mitappinventortest" title="" class="sf-depth-2" target="_blank" style="float: none; width: auto;">Forums</a></li><li id="menu-3105-1" class="middle even sf-item-6 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/ai2/support/troubleshooting.html" title="" class="sf-depth-2" style="float: none; width: auto;">Troubleshooting</a></li><li id="menu-3174-1" class="last odd sf-item-7 sf-depth-2 sf-list-anchors sf-no-children" style="white-space: normal; float: left; width: 100%;"><a href="http://appinventor.mit.edu/explore/support.html" title="Information about App Inventor version 1" class="sf-depth-2" style="float: none; width: auto;">AI Classic (v1)</a></li></ul></li></ul>  </nav>
+  </div>
+      <div class="region region-create">
+    <section id="block-block-21" class="block block-block block-odd block-count-2 block-region-create">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Create Button</h2>
+            <div class="block-content content">
+      <p><a href="http://ai2.appinventor.mit.edu/" target="new"><button>Create</button></a></p>
+    </div>
+  </div>
+</section>
+  </div>
+    </div>
+      <div class="region region-header">
+    <section id="block-block-23" class="block block-block block-odd block-count-3 block-region-header">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Social Icons</h2>
+            <div class="block-content content">
+      <p style="color:white;float:left;margin: 10px 5px;">
+Follow Us:</p>
+<p style="float:left;margin: 5px 10px;"><a href="https://www.facebook.com/MITAppInventor" target="_blank"><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/facebook.png" style="width:25px;"></a>    <a href="https://twitter.com/mitappinventor" target="_blank"><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/twitter.png" style="width:25px;"></a>    <a href="http://www.youtube.com/user/appinventor" target="_blank"><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/youtube.png" style="width:25px;"></a> <a href="https://plus.google.com/communities/109900432278954380687" target="_blank"><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/google+.png" style="width:25px;"></a> <a href="https://groups.google.com/forum/#!forum/mitappinventortest" target="_blank"><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/googlegroups.png" style="width:25px;"></a></p>
+    </div>
+  </div>
+</section>
+<div id="block-block-7" class="block block-block block-even block-count-4 block-region-header">
+  <div class="block-inner clearfix">
+                <div class="block-content content no-title">
+      <script>
+  (function() {
+    var cx = '005719495929270354943:tlvxrelje-e';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none; background: url(http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif) 0% 50% no-repeat rgb(255, 255, 255);"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">×</span></a></div></td></tr></tbody></table></div><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="image" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="search"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/small-logo.png" class="gsc-branding-img"></td></tr></tbody></table></form></div></div>
+
+    </div>
+  </div>
+</div>
+  </div>
+    
+
+  </header>
+  <div id="featured-block">
+    </div>
+  <div id="columns" class="no-menu-bar"><div class="columns-inner clearfix">
+            
+    
+    <div id="content-column"><div class="content-inner">
+
+      
+            <section id="main-content" role="main">
+
+                        
+        
+        <div id="content">  <div class="region region-content">
+    <div id="block-system-main" class="block block-system block-odd block-count-5 block-region-content">
+  <div class="block-inner clearfix">
+                <div class="block-content content no-title">
+      <article id="article-380" class="article article-type-tutorial article-lang-en odd article-full clearfix" about="/ai2/colored-dots" typeof="sioc:Item foaf:Document" role="article">
+
+  
+        <header class="clearfix">
+
+      
+              <h1 property="dc:title" datatype="" class="article-title">
+                      Colored Dots for App Inventor 2                  </h1>
+      
+      
+    </header>
+    
+  <div class="article-content">
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><style>
+<!--/*--><![CDATA[/* ><!--*/
+
+li {
+padding-bottom: 7px;
+}
+
+.basicblock {
+border: 1px dashed #7AA81C;
+padding-left: 4px;
+padding-right: 4px;
+padding-top: 1px;
+padding-bottom: 1px;
+background-color: #E7F2CB;
+font-size: 9pt;
+text-wrap: suppress;
+
+}
+
+.callblock {
+border: 1px dashed #000000;
+padding-left: 4px;
+padding-right: 4px;
+padding-top: 1px;
+padding-bottom: 1px;
+background-color: #E0D1FF;
+font-size: 9pt;
+text-wrap: suppress;
+
+}
+
+.argblock {
+border: 1px dashed #000000;
+padding-left: 4px;
+padding-right: 4px;
+padding-top: 1px;
+padding-bottom: 1px;
+background-color: #E5E5FF;
+font-size: 9pt;
+text-wrap: suppress;
+
+}
+
+.textblock {
+border: 1px dashed #000000;
+padding-left: 4px;
+padding-right: 4px;
+padding-top: 1px;
+padding-bottom: 1px;
+background-color: #FADAA0;
+font-size: 9pt;
+text-wrap: suppress;
+
+}
+
+.setblock {
+border: 1px dashed #000000;
+padding-left: 4px;
+padding-right: 4px;
+padding-top: 1px;
+padding-bottom: 1px;
+background-color: #C1D5F8;
+font-size: 9pt;
+text-wrap: suppress;
+}
+
+.controlblock {
+border: 1px dashed #000000;
+padding-left: 4px;
+padding-right: 4px;
+padding-top: 1px;
+padding-bottom: 1px;
+background-color: #FAEDBB;
+font-size: 9pt;
+text-wrap: suppress;
+}
+
+/*--><!]]>*/
+</style><div align="center">
+<h3 style="background-color:#86c816;margin:10px;">This is an App Inventor 2 Tutorial (Need the <a href="http://appinventor.mit.edu/explore/content/colored-dots.html">App Inventor Classic version</a>?)</h3>
+</div>
+<h2 class="ai-header"><span style="color:green;">Colored Dots</span>: Creating Apps with Multiple Screens</h2>
+<p>This tutorial shows how to create apps that have multiple screens. In App Inventor, you can have a screen open a second screen. Later, the second screen can return to the screen that opened it. You can have as many screens as you like, but each screen closes by returning to the screen that opened it. The screens can share information by passing and returning values when they open and close. The screens also share the same TinyDB data, which they can use to store and share values.</p>
+<p>Building an app with multiple screens is a lot like creating several individual apps. Every screen that you create has its own components in the Designer window. In the Blocks Editor, you will be able to see only the components of the screen currently selected in the Designer. Similarly, the blocks of code related to a screen cannot refer to blocks of code in another screen.</p>
+<p>This program, ColoredDots, has two screens. ColoredDots is similar to <a href="http://appinventor.mit.edu/explore/ai2/paintpot-part1.html">PaintPot</a>, but it uses a second screen to let the user create new colors by providing numerical values for the red, green, and blue color composition (RGB). In the PaintPot app, a user can only paint with one of the three predefined colors. Adding more colors to Paintpot would have required new buttons on the screen, reducing the amount of space available for painting. In ColoredDots, the new color is chosen on a second screen called Brush_Picker. Once a new color has been created in this second screen, its value is passed back to the first screen. You can also save and name the colors you create in the second screen, then use the saved colors later when painting. By using ListPicker to store the colors you create, it eliminates the need for the user to remember the name of the color they saved and spell it correctly in accessing it again. This makes the database of stored colors more accessible, making it easier to share the app among a group of people.</p>
+<p>Here are the two screens for the ColoredDots app:</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/brush_picker.png" style="float:right;"></p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/screen1.png"></p>
+<h4 class="ai-header">Objectives</h4>
+<p>By the end of this tutorial, you should have a understanding of:</p>
+<ul><li>How to make an app with multiple screens.</li>
+<li>How to pass values from one screen to another via <b>TinyDB</b>.</li>
+<li>How to fill and use the <b>ListPicker</b> element.</li>
+</ul><h4 class="ai-header">Building the Main Screen (Screen1)</h4>
+<p>You start building a multiscreen app by creating a new project, just as with any other app. As usual, App Inventor automatically creates the main screen and names it <b>Screen1</b> and you can add components. Here's the Designer and the Components panel when all the components for <b>Screen1</b> have been added.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/viewer.png"></p>
+<p>The components are:</p>
+<table class="lined-table"><tbody><tr style="background-color: #EFEFEF; font-weight: bold;"><td>
+Component Type
+</td>
+<td>
+Palette Group
+</td>
+<td>
+What you'll name it
+</td>
+<td>
+Purpose of Component
+</td>
+<td>
+Component Settings
+</td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">TitleLabel</td>
+<td>Shows the title "Paint with Colored Dots"</td>
+<td>Change Properties to FontBold and set FontSize to 16, TextAlignment to center, and Width to Fill parent</td>
+</tr><tr><td>
+<b>HorizontalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">HorizontalArrangement1</td>
+<td>Holds the following 4 labels:</td>
+<td>Set Width to Fill Parent and AlignHorizontal to Center</td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">ColorLabel</td>
+<td>Shows the text "Current Color"</td>
+<td></td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">ColorSample</td>
+<td>Blank label whose background color is the current color which we initialize to be black</td>
+<td></td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">DotSizeLabel</td>
+<td>Shows the text "Dot size"</td>
+<td></td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">DotSizeValue</td>
+<td>Shows the current dot size. We will initialize this to 3.</td>
+<td></td>
+</tr><tr><td>
+<b>Canvas</b>
+</td>
+<td>Drawing and Animation</td>
+<td style="color:green;">Canvas1</td>
+<td>Shows dots at the places you touch</td>
+<td>Set the width to Fill parent and the height to 300 pixels</td>
+</tr><tr><td>
+<b>HorizontalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">HorizontalArrangement2</td>
+<td>Holds the following 2 Buttons and ListPicker</td>
+<td>Set Width to Fill Parent and AlignHorizontal to Center</td>
+</tr><tr><td>
+<b>Button</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">EraseButton</td>
+<td>Clears the canvas</td>
+<td>Set Text to "Erase"</td>
+</tr><tr><td>
+<b>Button</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">openBrushPicker</td>
+<td>Launches the second screen</td>
+<td>Set Text to "Customize Brush"</td>
+</tr><tr><td>
+<b>ListPicker</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">ListPicker1</td>
+<td>Loads the list of colors from the data base</td>
+<td>Set Text to "Stored Colors"</td>
+</tr><tr><td>
+<b>TinyDB</b>
+</td>
+<td>Storage</td>
+<td style="color:green;">TinyDB1</td>
+<td>Stores color names and values</td>
+<td></td>
+</tr></tbody></table><p>We'll look at the blocks for <b>Screen1</b> below. But first let's add the other screen.</p>
+<h4 class="ai-header">Adding a second screen</h4>
+<p>To add a new screen to your app, click the Add Screen button in the top toolbar of the Designer window. A dialog window will appear, in which you can provide a name for the new screen.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/newscreen.png" style="float:right; width:250px;"></p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/addScreen.png" style="width:400px;"></p>
+<pre class="ai-box"><b>Note:</b> You should make the name of the new screen something meaningful when you add it. Do that now, because once a screen has been added, its name cannot be changed -- the Rename button for the screen component itself is disabled -- it's good to have meaningful names for the parts of your program. One limitation here is that <b>Screen1</b> cannot be renamed. Remember also that the screen's title (shown in the title bar when the app is running) is different from its name. You can change the screen title in the Properties pane.</pre><p>When you create a new screen, the Designer window switches to display it. Initially there will be no components, just like with a new app, and you add new components by dragging them from the Palette, just as with any screen. Here's the Designer window for the second screen, named <b>Brush_Picker</b>, after the components have been added. Notice that <b>Brush_Picker</b> is selected in the dropdown on the top bar outlined in red. This is because it is the current screen.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/brush_designer.jpg"></p>
+<p>The components for the brush picker screen are:</p>
+<table class="lined-table"><tbody><tr style="background-color: #EFEFEF; font-weight: bold;"><td>
+Component Type
+</td>
+<td>
+Palette Group
+</td>
+<td>
+What you'll name it
+</td>
+<td>
+Purpose of Component
+</td>
+<td>
+Component Settings
+</td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">RedLabel</td>
+<td>Shows the text "Red"</td>
+<td></td>
+</tr><tr><td>
+<b>TextBox</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">Red</td>
+<td>For entering the amount of red in the color (0-255)</td>
+<td></td>
+</tr><tr><td>
+<b>HorizontalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">RedHorizontalArrangement</td>
+<td>Holds RedLabel and Red TextBox</td>
+<td></td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">BlueLabel</td>
+<td>Shows the text "Blue"</td>
+<td></td>
+</tr><tr><td>
+<b>TextBox</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">Blue</td>
+<td>For entering the amount of blue in the color (0-255)</td>
+<td></td>
+</tr><tr><td>
+<b>HorizontalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">BlueHorizontalArrangement</td>
+<td>Holds BlueLabel and Blue TextBox</td>
+<td></td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">GreenLabel</td>
+<td>Shows the text "Green"</td>
+<td></td>
+</tr><tr><td>
+<b>TextBox</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">Green</td>
+<td>For entering the amount of green in the color (0-255)</td>
+<td></td>
+</tr><tr><td>
+<b>HorizontalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">GreenHorizontalArrangement</td>
+<td>Holds GreenLabel and Green TextBox</td>
+<td></td>
+</tr><tr><td>
+<b>VerticalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">VerticalArrangement1</td>
+<td>Holds Color HorizontalArrangements</td>
+<td></td>
+</tr><tr><td>
+<b>Canvas</b>
+</td>
+<td>Drawing and Animation</td>
+<td style="color:green;">Canvas1</td>
+<td>Displays the size and color of the test color</td>
+<td>Set Width and Height to Fill parent</td>
+</tr><tr><td>
+<b>HorizontalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">HorizontalArrangement1</td>
+<td>Holds VerticalArrangement1 and Canvas1</td>
+<td>Set Width to Fill parent</td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">DotRadius</td>
+<td>Shows the text "Dot Size"</td>
+<td></td>
+</tr><tr><td>
+<b>TextBox</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">RadiusTextBox</td>
+<td>Shows the current dot size</td>
+<td></td>
+</tr><tr><td>
+<b>HorizontalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">RadiusHorizontalArrangement</td>
+<td>Holds DotRadius and RadiusTextBox</td>
+<td></td>
+</tr><tr><td>
+<b>Button</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">TestColorButton</td>
+<td>Press to create the new color and prompts the user to store this color</td>
+<td>Set Text to "Test Color"</td>
+</tr><tr><td>
+<b>Label</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">LabelTestColorSample</td>
+<td>Blank label whose background color is the new color</td>
+<td>Set Width to Fill parent</td>
+</tr><tr><td>
+<b>HorizontalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">TestHorizontalArrangement</td>
+<td>Holds TestColorButton and LabelTestColorSample</td>
+<td>Set Width to Fill parent</td>
+</tr><tr><td>
+<b>Button</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">ResetColorButton</td>
+<td>Resets all the values to the default color, black</td>
+<td>Set Text to "Reset Brush Selector"</td>
+</tr><tr><td>
+<b>Button</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">ReturnToPainting</td>
+<td>Returns to the main screen with the new color and dot size</td>
+<td>Set Text to "Return to Painting" and FontSize to 16</td>
+</tr><tr><td>
+<b>VerticalArrangement</b>
+</td>
+<td>Layout</td>
+<td style="color:green;">VerticalArrangement2</td>
+<td>Holds ResetColorButton and ReturnToPainting</td>
+<td>Set Width to Fill Parent and AlignHorizontal to Center</td>
+</tr><tr><td>
+<b>Notifier</b>
+</td>
+<td>User Interface</td>
+<td style="color:green;">Notifier1</td>
+<td>Shows a dialog for saving the color and entering a color name</td>
+<td></td>
+</tr><tr><td>
+<b>TinyDB</b>
+</td>
+<td>Storage</td>
+<td style="color:green;">TinyDB1</td>
+<td>Stores color names and values</td>
+<td></td>
+</tr></tbody></table><p>Here and in general with multiple screen apps, only the components that belong to the current screen (in this case <b>Brush_Picker</b>) are shown in the Designer and the Components pane. You can switch between screens by toggling between <b>Brush_Picker</b> and <b>Screen1</b> using the dropdown, and the view in the Designer will show the corresponding screen. The same is true for the Blocks Editor: When you're working on a screen you'll see only the blocks for that screen.</p>
+<pre class="ai-box">None of the components, variable definitions, and procedures that you define in one screen will be accessible from any other screen. We'll see below how to pass information between screens.</pre><h4 class="ai-header">Blocks for the main screen (<b>Screen1</b>)</h4>
+<p>The <b>Screen1</b> is essentially a drawing program. When you touch the Canvas, the app draws a dot of the current radius and color. The color is specified by the background of the <b>ColorSample</b> label. The erase button clears the canvas. When the screen opens, it initializes the radius to 3 and the color to black. Here are the corresponding blocks:</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/screen1basicblocks.png"></p>
+<p>It is worth noting that the <span class="eventblock">Initialize</span> block uses the procedure <span class="callblock-ai2">TinyDB1.StoreValue</span>. This action will be discussed in more detail later. Basically, when the screen starts, it stores the default color, Black. </p>
+<pre class="ai-testing"><b>Testing the behavior.</b> Test to make sure the drawing behavior acts as you expect it to. You won't be able to add new colors yet, but see what happens when you try to draw dots of the page.</pre><h4 class="ai-header">Communicating with the brush picker screen</h4>
+<p>The multiple screen aspect of the app involves getting the "new brush": the new color and the new dot radius. It's the job of <b>Brush_Picker</b> to create these values and return these to <b>Screen1</b> as a list of three items: the color, the dotsize, and the total number of colors stored. The number of colors is necessary for creating the list that ListPicker will reference. We'll see how <b>Brush_Picker</b> does this below, but from the perspective of <b>Screen1</b>, all it needs to do is open <b>Brush_Picker</b> and get the result.</p>
+<p>Here's how this happens: when the Customize Brush button is pressed, <b>Screen1</b> uses <span class="controlblock-ai2">open another screen with start value</span> to open <b>Brush_Picker</b>. When the user finishes with Brush_Picker, it will signal the other screen closed event, which provides the name of the screen (here Brush_Picker) and the value returned (here the three-element list). The event handler for <b>Screen1</b> extracts the three items from the list and sets the ColorSample background and the DotSizeValue text properties. Here are the blocks:</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/screen1more.png"></p>
+<p>ColoredDots uses <span class="controlblock-ai2">open another screen with value</span> to open <b>Brush_Picker</b> with values passed to it from <b>Screen1</b>. The other screen then accesses these opening values using <span class="controlblock-ai2">get start value</span> blocks. In general, a screen opens another screen with <span class="controlblock-ai2">open another screen</span> and gets a result back through the <span class="controlblock-ai2">when other screen closed</span> event. In this case, the values are passed from <b>Screen1</b> to <b>Brush_Picker</b> so the app can keep track of how many colors are stored and what the current values are.</p>
+<pre class="ai-warning"><b>Testing the behavior.</b> App Inventor 2 allows multi-screen app testing during live development, however it is not fully functional when passing values between screens. For this reason, <strong>you actually have to <a href="http://appinventor.mit.edu/explore/ai2/share.html" target="blank">package the app to your phone or emulator</a> to test the multi-screen switching behavior</strong>.</pre><h4 class="ai-header">Sharing data via TinyDB</h4>
+<p>Besides opening screens and returning values, the different screens in a multiple screen app can communicate through TinyDB. To do this, give every screen its individual TinyDB component. Even though these will be "different" TinyDB components, they will in fact all share the same keys and values: If one screen stores a value under a key, the other screen can get that value by using the same key.</p>
+<p>ColoredDots uses TinyDB to let you name the colors you create and save them to later use. The saving and naming will be done in <b>Brush_Picker</b>, as shown in the blocks later. When you open ListPicker (labelled Stored Color) in <b>Screen1</b>, the app uses opens the list of colors that you have stored for you to choose one and then sets the drawing color to the result. The elements are added to this list by creating the procedure <span class="callblock-ai2">populateList</span>. As shown in these blocks, <span class="callblock-ai2">populateList</span> iterates through the all of the stored entries in the database up to the number of stored colors and adds them to the list tinyDBlist. It returns this list, which ListPicker1 points to.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/screen1populatelist.png"></p>
+<p>Now that <span class="callblock-ai2">populateList</span> has been created, add the following to <span class="controlblock-ai2">Screen1.Initialize</span> and <span class="controlblock-ai2">Screen1.OtherScreenClosed</span> :</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/screen1addedblocks.png"></p>
+<p>When ListPicker is opened, you will see a list of all the colors you created. <span class="controlblock-ai2">ListPicker1.AfterPicking</span> sets the Color value stored for that name to be the current drawing color and then sets the current color swatch to that color, as shown here. </p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/screen1listpicker.png"></p>
+<h4 class="ai-header">Blocks for the <b>Brush_Picker</b> screen</h4>
+<p>The main job of <b>Brush_Picker</b> is to create a color from the red-green-blue values entered in the text boxes and provide that color to <b>Screen1</b>. One thing the <b>Brush_Picker</b> needs to check is that it's using good values for colors and dot size. Each of the red, green, blue values should be a number between 0 and 255. But you could have entered anything in those text boxes. The <span class="callblock-ai2">checkColor</span> procedure takes a value and limits its range to between 0 and 255. If it's less than 0 (or not a number at all) the result will be 0. If it's greater than 255, the result will be 255. </p>
+<p>The <span class="callblock-ai2">checkColor</span> procedure calls the <span class="callblock-ai2">limitRange</span> procedure. This is a general procedure that takes an input, a lower limit, and an upper limit, and restricts the input to lie within that range (and it returns the lower limit if the input is not a number). The procedure is simple, but tricky: To restrict the range, take the maximum of the input and the lower limit, then take the minimum of the result and the upper limit. This programming "trick" has little to do with multiple screens or App Inventor. You might want to take a few moments to convince yourself that it really works.</p>
+<p>Below are the blocks for <span class="callblock-ai2">checkColor</span> and <span class="callblock-ai2">limitRange</span>. Remember that procedures are mutator blocks and we can use the mutator button to add (and change the names of) parameters to our procedure. To review mutators, check out the <a href="http://appinventor.mit.edu/explore/ai2/support/concepts/mutators.html">mutators page</a>.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/checkColor.png"></p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/LimitRange.png"></p>
+<p>Now, we will use those two procedures to create the rest of the blocks for <b>Brush_Picker</b>. When you click ReturnToPainting, the new color, the new dot size (taken from the RadiusTextBox), and the total number of colors are returned to <b>Screen1</b> as a three-item list. As mentioned before, when <b>Brush_Picker</b> is open, <b>Screen1</b> passes its values of the current color, the number of colors, and the current dot radius size. <b>Brush_Picker</b> uses <span class="controlblock-ai2">get start value</span> when it is initialized to access these values.</p>
+<p>When you click the TestColorButton, the color is created for you as the background of LabelTestColorSample and the Canvas shows a circle of the appropriate size and color. To return the list to <b>Screen1</b>, <b>Brush_Picker</b> uses <span class="controlblock-ai2">close screen with value</span>, which takes as an argument the value to be returned (in this case, the list). When a screen closes, the app returns to the screen that opened it.</p>
+<p>Here are the blocks that do this. <b>Brush_Picker</b> uses the procedures <span class="callblock-ai2">CheckColor</span> and <span class="callblock-ai2">LimitRange</span> to ensure that the values entered in the text boxes are valid numbers for colors and dot size.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/brushpicker_init.png"></p>
+<p>When TestColorButton is clicked, is displays the created color. Notifier1 is then used to give you a choice to save the color or cancel using the <span class="eventblock">Notifier1.ShowChooseDialog</span> block. The response from this will trigger further Notifier events so that you can save the color.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/testcolorbutton.png"></p>
+<p>The next blocks show how Brush_Picker associates a name with a color for use by Screen1. The <span class="eventblock">Notifier1.ShowChooseDialog</span> block triggers a <span class="eventblock">Notifier1.AfterChoosing</span> event. In these blocks, the <span class="controlblock-ai2">ifelse</span> block checks the response to whether or not the color should be saved. If the response is "OK," <span class="eventblock">Notifier1.AfterChoosing</span> calls <span class="eventblock">Notifier1.ShowTextDialog</span> which prompts you to store a name for this color.</p>
+<p>Once you make your entry, the color is stored with two tags two ways in TinyDB1. First, it stores the name with the current number of colors as the key. This is used when iterating through the list of colors for ListPicker in <b>Screen1</b> so that the names will be displayed for the user. Secondly, the color is stored in TinyDB, using the name you entered as a key. <b>Screen1</b> can then retrieve the color using its own TinyDB component and access it via the stored name as chosen in ListPicker.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/notifier.png"><br><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/notifier2.png"></p>
+<p>The Reset button allows the user to clear all of the entries in the red, green, and blue fields so they can start over easily. The blocks for this are shown here:</p>
+<p>Note: you can use copy paste (ctl-v and ctl-c) after creating the first set Red.Text then you can use the dropdown to change from red to green to blue.</p>
+<p><img src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/reset.png"></p>
+<h4 class="ai-header">Comments on multiple screens</h4>
+<p>You can have many screens in an App Inventor app, but a screen always returns to the screen that opened it. On the other hand, you can get the effect of screens switching to arbitrary other screen by setting up a "manager screen" that is used for opening all the other screens. When a screen wants to switch, it returns to the manager with a value saying which screen to open next.</p>
+<pre class="ai-testing"><b>Testing the behavior.</b> App Inventor 2 allows multi-screen app testing during live development, however it is not fully functional when passing values between screens. REMEMBER, <strong>you actually have to <a href="http://appinventor.mit.edu/explore/ai2/share.html" target="blank">package the app to your phone or emulator</a> to test the multi-screen switching behavior</strong>.</pre><h4 class="ai-header">Further exploration</h4>
+<p>Now that you are able to create your own colors and access them for drawing, try some variations!</p>
+<ul><li>Make Brush_Picker warn the user if they are trying to store a color with the same name as something that has already been stored (e.g. don't let them make two colors named "red").
+</li><li>Have the starting color be the last one that the user was using in the app instead of always starting with black.
+</li></ul><h4 class="ai-header">Summary</h4>
+<p>In this tutorial you have learned:</p>
+<ul><li>How to make an app with multiple screens</li>
+<li>How to share data between those two screens using <b>TinyBD</b></li>
+<li>How to use a counter to add all of the values in <b>TinyDB</b> to add to a list.</li>
+<li>How to use <b>ListPicker</b> to select from a list of items</li>
+</ul><pre class="ai-box">This tutorial is based on work by Eni Mustafaraj of Wellesley College.
+
+Done with <span style="color:black;">Colored Dots</span>? Return to the other tutorials <a href="http://appinventor.mit.edu/explore/ai2/tutorials.html">here</a>.</pre></div></div></div><section class="field field-name-field-version field-type-taxonomy-term-reference field-label-above view-mode-full clearfix">
+
+      <h2 class="field-label">Tutorial Version:&nbsp;</h2>
+  
+  <ul class="field-items">
+
+    
+      <li class="field-item even">
+        <a href="http://appinventor.mit.edu/explore/tutorial-version/app-inventor-2.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">App Inventor 2</a>      </li>
+
+    
+  </ul>
+
+</section>
+<section class="field field-name-field-tutorial-difficulty field-type-taxonomy-term-reference field-label-above view-mode-full clearfix">
+
+      <h2 class="field-label">Tutorial Difficulty:&nbsp;</h2>
+  
+  <ul class="field-items">
+
+    
+      <li class="field-item even">
+        Advanced      </li>
+
+    
+  </ul>
+
+</section>
+<section class="field field-name-field-tutorial-type field-type-taxonomy-term-reference field-label-above view-mode-full clearfix">
+
+      <h2 class="field-label">Tutorial Type:&nbsp;</h2>
+  
+  <ul class="field-items">
+
+    
+      <li class="field-item even">
+        Drawing Canvas      </li>
+
+    
+      <li class="field-item odd">
+        Multiple Screens      </li>
+
+    
+      <li class="field-item even">
+        Data Storage      </li>
+
+    
+  </ul>
+
+</section>
+  </div>
+
+  
+  
+</article>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+        
+      </section>
+
+        <aside class="region region-content-aside">
+    <div id="block-block-25" class="block block-block block-odd block-count-6 block-region-content-aside">
+  <div class="block-inner clearfix">
+                <div class="block-content content no-title">
+      <div id="container" style="margin: 10px 0px;width: 60%">
+<div id="sub1" style="float:left;width:22%">
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/tweet_button.1404859412.html" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 106px; height: 20px;"></iframe>
+<script>
+<!--//--><![CDATA[// ><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+//--><!]]>
+</script></div>
+<div id="sub2" style="float:left;width:24%">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/oDB-fAAStWy.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/oDB-fAAStWy(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>
+<!--//--><![CDATA[// ><!--
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+//--><!]]>
+</script><div class="fb-share-button fb_iframe_widget" data-href="" data-type="button_count" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;href=http%3A%2F%2Fappinventor.mit.edu%2Fexplore%2Fai2%2Fcolored-dots.html&amp;locale=en_US&amp;sdk=joey&amp;type=button_count"><span style="vertical-align: bottom; width: 84px; height: 20px;"><iframe name="f15488d2cc" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:share_button Facebook Social Plugin" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/share_button.html" style="border: none; visibility: visible; width: 84px; height: 20px;" class=""></iframe></span></div>
+</div>
+<div id="sub4" style="float:left;width:20%">
+<script src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/in.js" type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  lang: en_US
+
+//--><!]]>
+</script><span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1406714489104_0"><a id="li_ui_li_gen_1406714489104_0-link" href="javascript:void(0);"><span id="li_ui_li_gen_1406714489104_0-logo">in</span><span id="li_ui_li_gen_1406714489104_0-title"><span id="li_ui_li_gen_1406714489104_0-mark"></span><span id="li_ui_li_gen_1406714489104_0-title-text">Share</span></span></a></span></span><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1406714489125_1-container" class="IN-right IN-hidden"><span id="li_ui_li_gen_1406714489125_1" class="IN-right"><span id="li_ui_li_gen_1406714489125_1-inner" class="IN-right"><span id="li_ui_li_gen_1406714489125_1-content" class="IN-right">0</span></span></span></span></span></span><script type="IN/Share+init" data-counter="right"></script></div>
+<div id="sub5" style="float:left;width:15%">
+<p><a data-pin-href="http://www.pinterest.com/pin/create/button/" data-pin-log="button_pinit_bookmarklet" class="PIN_1406714488521_pin_it_button_20 PIN_1406714488521_pin_it_button_en_20_gray PIN_1406714488521_pin_it_button_inline_20 PIN_1406714488521_pin_it_none_20" data-pin-config="none"><span class="PIN_1406714488521_hidden" id="PIN_1406714488521_pin_count_0"><i></i></span></a></p>
+<!-- Please call pinit.js only once per page --><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+(function(d){
+    var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+    p.type = 'text/javascript';
+    p.async = true;
+    p.src = 'http://assets.pinterest.com/js/pinit.js';
+    f.parentNode.insertBefore(p, f);
+}(document));
+
+//--><!]]>
+</script></div>
+<div id="sub3" style="float:left;width:19%">
+<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1406714488225" name="I0_1406714488225" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div>
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+//--><!]]>
+</script></div>
+</div>
+    </div>
+  </div>
+</div>
+  </aside>
+
+    </div></div>
+
+            
+  </div></div>
+
+      <footer role="contentinfo">
+              <div class="region region-footer">
+    <div id="block-block-3" class="block block-block block-odd block-count-7 block-region-footer">
+  <div class="block-inner clearfix">
+                <div class="block-content content no-title">
+      <style>
+<!--/*--><![CDATA[/* ><!--*/
+
+#footer-nav {
+width: 60%;
+margin: 0 auto;
+left: 30px;
+margin-bottom: 20px;
+overflow: hidden;
+position: relative;
+}
+
+#footer-nav ul{
+width: 24%;
+list-style: none;
+display: block;
+float: left;
+}
+
+/*--><!]]>*/
+</style><div id="footer-nav">
+<ul><li><strong>Home</strong></li>
+<li><a href="http://appinventor.mit.edu/explore/people.html">People</a></li>
+</ul><ul><li><strong>Blog</strong></li>
+<li><a href="http://appinventor.mit.edu/explore/news-events.html">News + Events</a></li>
+<li><a href="http://appinventor.mit.edu/explore/stories.html">Stories</a></li>
+<li><a href="http://appinventor.mit.edu/explore/blog.html">Team Blog</a></li>
+</ul><ul><li><strong>Using AI2</strong></li>
+<li><a href="http://appinventor.mit.edu/explore/get-started.html">Get Started</a></li>
+<li><a href="http://appinventor.mit.edu/explore/library.html">Library</a></li>
+<li><a href="http://appinventor.mit.edu/explore/ai2/tutorials.html">Tutorials</a></li>
+<li><a href="http://appinventor.mit.edu/explore/resources.html">Resources</a></li>
+<li><a href="https://groups.google.com/forum/#!categories/mitappinventortest" target="_blank">Forums</a></li>
+</ul><ul><li><strong>Support</strong></li>
+<li><a href="http://appinventor.mit.edu/explore/ai2/setup.html">Setup</a></li>
+<li><a href="http://appinventor.mit.edu/explore/ai2/support/troubleshooting.html">Troubleshooting</a></li>
+<li style="margin-top: 38px"><a href="http://appinventor.mit.edu/explore/support.html">App Inventor Classic</a></li>
+</ul></div>
+<p style="text-align: center; clear:both;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><img alt="Creative Commons License" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/88x31.png"></a> <br>
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></p>
+<p style="text-align: center;">© 2012-2014 <a href="http://web.mit.edu/" target="_blank">Massachusetts Institute of Technology</a></p>
+<p style="text-align: center;"><a href="http://appinventor.mit.edu/explore/contact.html">Contact Us</a></p>
+    </div>
+  </div>
+</div>
+  </div>
+    </footer>
+  
+</div>
+
+  
+<!-- Added by HTTrack --><!-- /Added by HTTrack -->
+
+<div id="lightbox2-overlay" style="display: none;"></div>      <div id="lightbox" style="display: none;" class="lightbox2-orig-layout">        <div id="outerImageContainer" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><div id="modalContainer" style="display: none; padding: 10px;"></div><div id="frameContainer" style="display: none; padding: 10px;"></div><div id="imageContainer" style="display: none; padding: 10px;"><img id="lightboxImage" alt=""><div id="hoverNav"><a id="prevLink" title="Previous" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#" style="padding-top: 10px;"></a><a id="nextLink" title="Next" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#" style="padding-top: 10px;"></a></div></div><div id="loading"><a href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#" id="loadingLink"></a></div></div>        <div id="imageDataContainer" class="clearfix" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">          <div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><div id="frameHoverNav"><a id="framePrevLink" title="Previous" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#" style="padding-top: 10px;"></a><a id="frameNextLink" title="Next" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#" style="padding-top: 10px;"></a></div><a id="bottomNavClose" title="Close" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"></a><a id="bottomNavZoom" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#"></a><a id="bottomNavZoomOut" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#"></a><a id="lightshowPause" title="Pause Slideshow" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#" style="display: none;"></a><a id="lightshowPlay" title="Play Slideshow" href="http://appinventor.mit.edu/explore/ai2/colored-dots.html#" style="display: none;"></a></div></div>        </div>      </div><iframe name="oauth2relay1512697198" id="oauth2relay1512697198" src="./Colored Dots for App Inventor 2   Explore MIT App Inventor_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 153px; display: none; top: 106px; position: absolute; left: 878px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>

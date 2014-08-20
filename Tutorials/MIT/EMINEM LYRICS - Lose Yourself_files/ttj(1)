@@ -1,0 +1,1 @@
+document.write('<scr' + 'ipt>\r\ncf.vars.cancel_impression[500081352] = true;\r\n</scr' + 'ipt>');
